@@ -1,0 +1,341 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F2F2F7 !important;
+    margin: 0;
+    padding: 0;
+
+    line-height: 24px;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1280px !important;
+    margin: 0 auto;
+}
+
+.col-xl {
+    padding: 32px !important;
+    margin: 8px;
+}
+
+.card {
+    flex-direction: row;
+}
+
+.header {
+    min-height: 278px;
+    width: 100%;
+    border-radius: 24px;
+
+    background: url("../img/header.svg");
+    background-size: cover;
+}
+
+.header-image {
+    display: none;
+}
+
+.brief {
+    background-color: #FAFAFA;
+    border-radius: 24px;
+
+    min-height: 278px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brief > *:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.tags {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #FAFAFA;
+    border: 1px solid #8E8E93;
+    padding: 5px 10px;
+    border-radius: 16px;
+
+    font: 600 15px/15px 'Montserrat', sans-serif;
+}
+
+.event-name {
+    font: 700 32px/32px 'Montserrat', sans-serif;
+}
+
+.members {
+    display: flex;
+    align-items: center;
+}
+
+.member-photo {
+    position: relative;
+
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+    border: 2px solid #ffffff;
+}
+
+#member-photo__first {
+    z-index: 3;
+}
+
+#member-photo__second {
+    z-index: 2;
+    left: -20px;
+}
+
+#member-photo__third {
+    z-index: 1;
+    left: -40px;
+}
+
+.members-count {
+    font: 600 15px/15px 'Montserrat', sans-serif;
+    margin-left: -30px;
+
+    color: #017FDA;
+}
+
+.event-title {
+    font: 700 24px/24px 'Montserrat', sans-serif;
+
+    margin-bottom: 20px;
+}
+
+.event-info {
+    background-color: #FAFAFA;
+    border-radius: 24px;
+    min-height: 424px;
+}
+
+.card {
+    align-items: center;
+
+    margin-bottom: 16px;
+}
+
+.card-title {
+    font: 600 17px/17px 'Montserrat', sans-serif;
+
+    margin-bottom: 4px;
+}
+
+.card-text {
+    font: 500 15px/15px 'Montserrat', sans-serif;
+}
+
+.card-image {
+    width: 64px;
+    height: 64px;
+    background-color: #F2F2F7;
+    border-radius: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 16px;
+}
+
+.card-image img, .card-participant {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-image__organizer {
+    border-radius: 50%;
+    max-height: 64px;
+    max-width: 64px;
+}
+
+.card-photo {
+    position: relative;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+    margin-right: 16px;
+}
+
+.card-participant {
+    border-radius: inherit;
+}
+
+.card-status {
+    position: absolute;
+    right: 0;
+}
+
+.event-description {
+    background-color: #FAFAFA;
+    border-radius: 24px;
+    min-height: 424px;
+}
+
+.event-params {
+    background-color: #FAFAFA;
+    border-radius: 24px;
+
+    min-height: 460px;
+}
+
+.participants-list {
+    min-height: 460px;
+
+    background-color: #FAFAFA;
+    border-radius: 24px;
+}
+
+.participants-extend {
+    font: 500 17px/17px 'Montserrat', sans-serif;
+}
+
+.participants-extend:hover {
+    text-decoration: none;
+}
+
+.join-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #017FDA;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 24px;
+
+    font: 600 24px/24px 'Montserrat', sans-serif;
+}
+
+.join-button:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #017FFF;
+}
+
+@media screen and (max-width: 1199px) {
+    .header {
+        border-radius: 0;
+        margin: 0 !important;
+        width: 100%;
+        object-fit: contain;
+
+        min-height: 565px;
+    }
+
+    .brief {
+        margin-top: -24px !important;
+    }
+
+    .col-xl {
+        margin: 0 0 16px 0;
+    }
+
+    .event-info, .event-params {
+        min-height: 0;
+    }
+
+    .tag {
+        font-size: 12px;
+    }
+
+    .event-name {
+        font-size: 24px;
+    }
+
+    .members-count {
+        font-size: 12px;
+    }
+
+    .join-button {
+        font-size: 17px;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .event-title {
+        font-size: 17px;
+    }
+
+    .event-description__text {
+        font-size: 15px;
+    }
+
+    .event-info, .event-description, .event-params {
+        min-height: 0;
+    }
+
+    .participants-extend {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .header {
+        min-height: 365px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .header {
+        min-height: 240px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .card-text {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .brief > *:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-title {
+        margin-bottom: 2px;
+    }
+}
